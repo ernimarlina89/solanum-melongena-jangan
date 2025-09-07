@@ -1,3 +1,11 @@
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;} /* sembunyikan menu hamburger */
+    footer {visibility: hidden;}    /* sembunyikan footer */
+    header {visibility: hidden;}    /* sembunyikan header "Made with Streamlit" */
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 import streamlit as st
 from streamlit_option_menu import option_menu  # pakai yang kemarin aja
 
